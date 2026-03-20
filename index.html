@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Video</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; /* no scroll */
+    }
+
+    video {
+      max-width: 100vw;   /* never exceed screen width */
+      max-height: 100vh;  /* never exceed screen height */
+      width: auto;
+      height: auto;
+      object-fit: contain; /* keep aspect ratio */
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <video controls autoplay controlsList="nodownload" disablePictureInPicture>
+    <source src="G:\video-page\video\vid2026_raw_old.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
